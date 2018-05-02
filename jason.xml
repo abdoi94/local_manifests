@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- device specific repos -->
-  <project name="MiNote3Dev/android_device_xiaomi_jason" path="device/xiaomi/jason" />
-  <project name="MiNote3Dev/android_kernel_xiaomi_sdm660" path="kernel/xiaomi/sdm660" />
-  <project name="MiNote3Dev/proprietary_vendor_xiaomi" path="vendor/xiaomi" clone-depth="1" />
+  <project name="https://github.com/abdoi94/android_device_xiaomi_jason" revision="dot-n" path="device/xiaomi/jason"  />
+  <project name="https://github.com/MiNote3Dev/android_kernel_xiaomi_sdm660" revision="cm-14.1" path="kernel/xiaomi/sdm660"/>
+  <project name="https://github.com/MiNote3Dev/proprietary_vendor_xiaomi" revision="cm-14.1" path="vendor/xiaomi" clone-depth="1" />
 
   <!-- platform specific repos -->
-  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" />
-  <project name="LineageOS/android_vendor_nxp-nfc_opensource_frameworks" path="vendor/nxp-nfc/opensource/frameworks" />
-  <project name="LineageOS/android_vendor_nxp-nfc_opensource_libnfc-nci" path="vendor/nxp-nfc/opensource/libnfc-nci" />
-  <project name="LineageOS/android_vendor_nxp-nfc_opensource_Nfc" path="vendor/nxp-nfc/opensource/Nfc" />
-  <project name="MiNote3Dev/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/sdm660" groups="qcom,qcom_audio" revision="cm-14.1-caf-660" />
-  <project name="MiNote3Dev/android_hardware_qcom_display" path="hardware/qcom/display-caf/sdm660" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-660" />
-  <project name="MiNote3Dev/android_hardware_qcom_media" path="hardware/qcom/media-caf/sdm660" groups="qcom" revision="cm-14.1-caf-660" />
+  <project name="https://github.com/MiNote3Dev/android_device_qcom_common" revision="cm-14.1" path="device/qcom/common" />
+  <project name="https://github.com/LineageOS/android_vendor_nxp-nfc_opensource_frameworks" revision="cm-14.1" path="vendor/nxp-nfc/opensource/frameworks" />
+  <project name="https://github.com/LineageOS/android_vendor_nxp-nfc_opensource_libnfc-nci" revision="cm-14.1" path="vendor/nxp-nfc/opensource/libnfc-nci" />
+  <project name="https://github.com/LineageOS/android_vendor_nxp-nfc_opensource_Nfc" revision="cm-14.1" path="vendor/nxp-nfc/opensource/Nfc" />
+  <project name="https://github.com/MiNote3Dev/android_hardware_qcom_audio" revision="cm-14.1-caf-660" path="hardware/qcom/audio-caf/sdm660" />
+  <project name="https://github.com/MiNote3Dev/android_hardware_qcom_display" revision="cm-14.1-caf-660" path="hardware/qcom/display-caf/sdm660" />
+  <project name="https://github.com/MiNote3Dev/android_hardware_qcom_media" revision="cm-14.1-caf-660" path="hardware/qcom/media-caf/sdm660" />
 
   <!-- common repos -->
   <remove-project name="LineageOS/android_system_bt" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_bluetooth" />
-  <project name="MiNote3Dev/android_system_bt" path="system/bt" groups="pdk" revision="staging/cm-14.1" />
-  <project name="MiNote3Dev/android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" revision="staging/cm-14.1" />
-  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" />
+  <project name="https://github.com/MiNote3Dev/android_system_bt" revision="staging/cm-14.1" path="system/bt" />
+  <project name="https://github.com/MiNote3Dev/android_vendor_qcom_opensource_bluetooth" revision="staging/cm-14.1" path="vendor/qcom/opensource/bluetooth" />
+  <project name="https://github.com/LineageOS/android_packages_resources_devicesettings" revision="cm-14.1" path="packages/resources/devicesettings" />
+  <project name="https://github.com/tabp0le/snapdragon-llvm" revision="master" path="prebuilts/snapdragon-llvm" />
 </manifest>
